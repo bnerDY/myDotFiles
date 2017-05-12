@@ -5,7 +5,9 @@ export ZSH=/Users/Martin/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+export ZSH_THEME="agnoster"
+
+export DEFAULT_USER="[Martin]"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,13 +88,6 @@ source $ZSH/oh-my-zsh.sh
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-# export ZSH_THEME="nebirhos"
-export ZSH_THEME="agnoster"
-DEFAULT_USER="Martin"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -121,9 +116,6 @@ export PATH=/Users/km/bin:/usr/local/bin:/usr/local/mongodb/bin:/usr/bin:/bin:/u
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-export CLICOLOR=1
-export LSCOLORS=gxfxaxdxcxegedabagacad
 
 
 alias -s py=atom
