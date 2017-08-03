@@ -118,13 +118,16 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
-alias -s py=atom
-alias -s md=atom
-alias -s txt=atom
-alias -s java=atom
-alias -s c=atom
-alias -s tex=atom
-alias -s js=atom
+function code {
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        local argPath="$1"
+        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+        open -a "Visual Studio Code" "$argPath"
+    fi
+}
 alias cls='clear'
 alias ll='ls -l'
 alias la='ls -a'
