@@ -128,8 +128,17 @@ function code {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+jhome () {
+  export JAVA_HOME=`/usr/libexec/java_home $@`
+  echo "JAVA_HOME:" $JAVA_HOME
+  echo "java -version:"
+  java -version
+}
+
 alias cls='clear'
 alias ll='ls -l'
 alias la='ls -a'
 alias vi='vim'
 alias grep="grep --color=auto"
+
